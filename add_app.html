@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية - تطبيقات الذكاء الاصطناعي</title>
+    <link rel="stylesheet" href="Style.css" >
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="brand-title">تطبيقات AI</div>
+            <ul class="nav-links">
+                <li><a href="home.html">الرئيسية</a></li>
+                <li><a href="AboutUs.html">من نحن</a></li>
+                <li><a href="apps.html">التطبيقات</a></li>
+                <li><a href="add_app.html">إضافة تطبيق</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <main>
+    <h1>إضافة تطبيق جديد</h1>
+    <p>يرجى ملء النموذج التالي لإضافة تطبيق جديد إلى القائمة.</p>
+    
+    <form id="add-app-form" novalidate>
+        <div class="form-group">
+            <label for="appName">اسم التطبيق (أحرف إنكليزية فقط بدون فراغات)</label>
+            <input type="text" id="appName" name="appName" required>
+            <small class="error-message"></small>
+        </div>
+        
+        <div class="form-group">
+            <label for="manufacturer">الشركة المصنّعة (أحرف إنكليزية فقط)</label>
+            <input type="text" id="manufacturer" name="manufacturer" required>
+            <small class="error-message"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="websiteUrl">الموقع الإلكتروني (URL)</label>
+            <input type="url" id="websiteUrl" name="websiteUrl" placeholder="https://example.com" required>
+            <small class="error-message"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="isFree">مجاني أم لا</label>
+            <select id="isFree" name="isFree" required>
+                <option value="">-- اختر --</option>
+                <option value="مجاني">مجاني</option>
+                <option value="غير مجاني">غير مجاني</option>
+            </select>
+            <small class="error-message"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="fieldOfUse">مجال الاستخدام</label>
+            <select id="fieldOfUse" name="fieldOfUse" required>
+                <option value="">-- اختر --</option>
+                <option value="Robotics">Robotics</option>
+                <option value="Education">Education</option>
+                <option value="E-Commerce">E-Commerce</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Art & Design">Art & Design</option>
+                <option value="Art & Design">Printings</option>
+                <option value="Art & Design">Accesories</option>
+            </select>
+            <small class="error-message"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="appDescription">شرح مختصر عن التطبيق</label>
+            <textarea id="appDescription" name="appDescription" rows="4"></textarea>
+        </div>
+
+        <div class="form-buttons">
+            <button type="submit" class="btn-submit">إرسال</button>
+            <button type="reset" class="btn-reset">إعادة</button>
+        </div>
+    </form>
+</main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2025</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="myFunctions.js" defer></script>
+</body>
+</html>

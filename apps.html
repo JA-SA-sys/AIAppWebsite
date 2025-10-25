@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التطبيقات - تطبيقات الذكاء الاصطناعي</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="brand-title">تطبيقات AI</div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="AboutUs.html">من نحن</a></li>
+                <li><a href="apps.html">التطبيقات</a></li>
+                <li><a href="add_app.html">إضافة تطبيق</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>قائمة التطبيقات المتاحة</h1>
+        <p>هنا يمكنك تصفح التطبيقات التي تمت إضافتها إلى نظامنا.</p>
+        
+        <table class="apps-table">
+            <thead>
+                <tr>
+                    <th>اسم التطبيق</th>
+                    <th>الشركة المطورة</th>
+                    <th>مجال الاستخدام</th>
+                    <th>مجاني / غير مجاني</th>
+                    <th>اختيار</th>
+                </tr>
+            </thead>
+            <tbody id="apps-list">
+                <tr>
+                    <td>ChatGPT</td>
+                    <td>OpenAI</td>
+                    <td>E-Commerce</td>
+                    <td>
+                        <select>
+                            <option value="freemium">مجاني (بميزات مدفوعة)</option>
+                            <option value="free">مجاني</option>
+                            <option value="paid">غير مجاني</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button class="btn-details" data-target="details-1">عرض التفاصيل</button>
+                    </td>
+                </tr>
+                <tr class="details-row" id="details-1">
+                    <td colspan="5">
+                        <div class="app-details">
+                            <p><strong>الموقع الإلكتروني:</strong> <a href="https://chat.openai.com" target="_blank">https://chat.openai.com</a></p>
+                            <p><strong>الوصف:</strong> روبوت محادثة متقدم قادر على إنشاء نصوص وإجابة أسئلة والمساعدة في مهام متنوعة.</p>
+                            <img src="chatgpt.png" alt="صورة ChatGPT" style="max-width:100px; height:auto;">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Midjourney</td>
+                    <td>Midjourney Inc</td>
+                    <td>Robotics</td>
+                    <td>
+                        <select>
+                            <option value="paid">غير مجاني</option>
+                            <option value="free">مجاني</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button class="btn-details" data-target="details-2">عرض التفاصيل</button>
+                    </td>
+                </tr>
+                <tr class="details-row" id="details-2">
+                    <td colspan="5">
+                        <div class="app-details">
+                            <p><strong>الموقع الإلكتروني:</strong> <a href="https://www.midjourney.com" target="_blank">https://www.midjourney.com</a></p>
+                            <p><strong>الوصف:</strong> تطبيق رائد في مجال تحويل النصوص إلى صور فنية عالية الجودة باستخدام الذكاء الاصطناعي.</p>
+                        </div>
+                        <div class="mt-4 text-center">
+                            <video  controls width="100%" style="max-width: 400px;" >
+                              <source src="midjourney.mp4" type="video/mp4" >
+                              متصفحك لا يدعم عرض الفيديو.
+                            </video>
+                          </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Grammarly</td>
+                    <td>Grammarly Inc</td>
+                    <td>Education</td>
+                    <td>
+                        <select>
+                            <option value="freemium">مجاني (بميزات مدفوعة)</option>
+                             <option value="free">مجاني</option>
+                            <option value="paid">غير مجاني</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button class="btn-details" data-target="details-3">عرض التفاصيل</button>
+                    </td>
+                </tr>
+                <tr class="details-row" id="details-3">
+                    <td colspan="5">
+                        <div class="app-details">
+                            <p><strong>الموقع الإلكتروني:</strong> <a href="https://www.grammarly.com" target="_blank">https://www.grammarly.com</a></p>
+                            <p><strong>الوصف:</strong> مساعد كتابة ذكي يقوم بالتحقق من القواعد النحوية والإملائية ويقدم اقتراحات لتحسين أسلوب الكتابة.</p>
+                            <img src="grammarly.jpg" alt="صورة Grammarly" style="max-width:100px; height:auto;">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>TensorFlow</td>
+                    <td>Google Brain</td>
+                    <td>Robotics</td>
+                    <td>
+                        <select>
+                             <option value="free">مجاني</option>
+                            <option value="paid">غير مجاني</option>
+                        </select>
+                    </td>
+                    <td>
+                       <button class="btn-details" data-target="details-4">عرض التفاصيل</button>
+                    </td>
+                </tr>
+                <tr class="details-row" id="details-4">
+                    <td colspan="5">
+                        <div class="app-details">
+                            <p><strong>الموقع الإلكتروني:</strong> <a href="https://www.tensorflow.org" target="_blank">https://www.tensorflow.org</a></p>
+                            <p><strong>الوصف:</strong> مكتبة برمجية مفتوحة المصدر لتعلم الآلة وتطبيقات الذكاء الاصطناعي، تستخدم على نطاق واسع في الأبحاث والتطوير.</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>NotionAI</td>
+                    <td>Notion Labs Inc</td>
+                    <td>Education</td>
+                    <td>
+                        <select>
+                            <option value="paid">غير مجاني</option>
+                            <option value="free">مجاني</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button class="btn-details" data-target="details-5">عرض التفاصيل</button>
+                    </td>
+                </tr>
+                <tr class="details-row" id="details-5">
+                    <td colspan="5">
+                        <div class="app-details">
+                            <p><strong>الموقع الإلكتروني:</strong> <a href="https://www.notion.so/product/ai" target="_blank">https://www.notion.so/product/ai</a></p>
+                            <p><strong>الوصف:</strong> ميزة ذكاء اصطناعي مدمجة في تطبيق Notion تساعد على تلخيص النصوص، توليد الأفكار، وتنظيم المهام بكفاءة.</p>
+                             
+                        </div>
+                        <div class="mt-4 text-center">
+                            <video  controls width="100%" style="max-width: 400px;" >
+                              <source src="Notion.mp4" type="video/mp4" >
+                              متصفحك لا يدعم عرض الفيديو.
+                            </video>
+                          </div>
+                    </td>
+                </tr>
+                
+              </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2025</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="myFunctions.js" ></script>
+</body>
+</html>
